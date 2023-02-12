@@ -1,0 +1,301 @@
+.homeContainer {
+    /* background-image: url(../../assets/Images/christmas-5963904.jpg); */
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 3;
+    background-size: cover;
+}
+
+.companyName {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.welcomePage1 {
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(255, 0, 162);
+
+    animation-name: blink1;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+
+}
+
+@keyframes blink1 {
+    0% {
+        color: rgb(48, 21, 4);
+    }
+
+    25% {
+        color: rgb(255, 127, 138);
+    }
+
+    50% {
+        color: rgb(52, 213, 74);
+    }
+
+    75% {
+        color: rgb(61, 37, 214);
+    }
+
+    100% {
+        color: rgb(168, 236, 65);
+    }
+}
+
+.welcomePage2 {
+    font-size: 100px;
+    font-weight: bold;
+
+
+    animation-name: blink2;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+
+}
+
+@keyframes blink2 {
+    0% {
+        color: rgb(48, 21, 4);
+    }
+
+    25% {
+        color: rgb(61, 37, 214);
+    }
+
+    50% {
+        color: rgb(255, 127, 138);
+    }
+
+    75% {
+        color: rgb(168, 236, 65);
+    }
+
+    100% {
+        color: rgb(52, 213, 74);
+    }
+}
+
+.welcomePage3 {
+    font-size: 100px;
+    font-weight: bold;
+
+
+    animation-name: blink3;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+
+}
+
+@keyframes blink3 {
+    0% {
+        color: rgb(255, 127, 138);
+    }
+
+    25% {
+        color: rgb(52, 213, 74);
+    }
+
+    50% {
+        color: rgb(48, 21, 4);
+    }
+
+    75% {
+        color: rgb(168, 236, 65);
+    }
+
+    100% {
+        color: rgb(61, 37, 214);
+    }
+}
+
+.welcomePage4 {
+    font-size: 100px;
+    font-weight: bold;
+
+
+    animation-name: blink4;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+
+}
+
+@keyframes blink4 {
+    0% {
+        color: rgb(48, 21, 4);
+    }
+
+    25% {
+        color: rgb(61, 37, 214);
+    }
+
+    50% {
+        color: rgb(255, 127, 138);
+    }
+
+    75% {
+        color: rgb(168, 236, 65);
+    }
+
+    100% {
+        color: rgb(52, 213, 74);
+    }
+}
+
+.welcomePage5 {
+    font-size: 100px;
+    font-weight: bold;
+
+
+    animation-name: blink5;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+
+}
+
+@keyframes blink5 {
+    0% {
+        color: rgb(61, 37, 214);
+
+    }
+
+    25% {
+        color: rgb(52, 213, 74);
+    }
+
+    50% {
+        color: rgb(168, 236, 65);
+    }
+
+    75% {
+        color: rgb(255, 127, 138);
+    }
+
+    100% {
+        color: rgb(48, 21, 4);
+    }
+}
+
+.welcomePage6 {
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(255, 0, 162);
+
+    animation-name: blink6;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+
+}
+
+@keyframes blink6 {
+    0% {
+        color: rgb(48, 21, 4);
+    }
+
+    25% {
+        color: rgb(255, 127, 138);
+    }
+
+    50% {
+        color: rgb(52, 213, 74);
+    }
+
+    75% {
+        color: rgb(61, 37, 214);
+    }
+
+    100% {
+        color: rgb(168, 236, 65);
+    }
+}
+
+.welcomePage7 {
+    font-size: 100px;
+    font-weight: bold;
+
+
+    animation-name: blink7;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+
+}
+
+@keyframes blink7 {
+    0% {
+        color: rgb(48, 21, 4);
+    }
+
+    25% {
+        color: rgb(183, 213, 52);
+    }
+
+    50% {
+        color: rgb(206, 19, 35);
+    }
+
+    75% {
+        color: rgb(60, 88, 17);
+    }
+
+    100% {
+        color: rgb(61, 37, 214);
+    }
+}
+/* for showing searched products */
+.maincontainer
+{
+    display: flex;
+    width: 1535px ;
+    flex-flow: row wrap;
+    overflow-y: auto;
+    height: 650px;
+    justify-content: space-around;
+}
+.containerOfpopularItems
+{
+    display: flex;
+    flex-flow: column wrap;
+    border: 3px solid rgb(207, 206, 206);
+    border-radius: 10px;
+    width: 200px;
+    height: fit-content;
+    
+
+}
+.productImg
+{
+    width: 200px;
+    height: 300px;
+    
+    background-image: url('../../assets/Images/istockphoto-178082285-1024x1024.jpg');
+background-size: cover;
+}

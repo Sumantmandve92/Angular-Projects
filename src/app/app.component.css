@@ -1,0 +1,15 @@
+.routerContent
+{
+    width:1535px;
+    min-height: 700px;
+  
+    /* background-image: url(../assets/Images/christmas-5963904.jpg); */
+    /* background-image: linear-gradient(to bottom ,rgb(248, 248, 250),rgb(243, 243, 244) ) ; */
+}
+.wholeContent
+{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 100%;
+}

@@ -1,0 +1,34 @@
+<div class="homeContainer">
+    <div class="companyName" *ngIf="this.serve.showcategory==0">
+        <div class="welcomePage1">S</div>
+        <div class="welcomePage2">W</div>
+        <div class="welcomePage3">R-</div>
+        <div class="welcomePage4">M</div>
+        <div class="welcomePage5">A</div>
+        <div class="welcomePage6">R</div>
+        <div class="welcomePage7">T</div>
+    </div>
+    <div class="maincontainer" *ngIf="this.serve.showcategory==2">
+
+        <div class="containerOfpopularItems" *ngFor="let item of this.serve.searchItem">
+
+            <div class="productImg productInfo" (click)="this.serve.showMoreAboutThisItem(item)">
+                <ng-template [ngIf]="item.file!=null">
+                    {{item.file}}
+                </ng-template>
+
+            </div>
+            <div class="productInfo">{{item.itemname}} {{item.brand}}</div>
+
+            <div class="productInfo">Price :₹{{item.price}}</div>
+            <div class="productInfo" *ngIf="item.qty!=0">Stock :{{item.qty}}</div>
+            <div class="productInfo" *ngIf="item.qty==0" style="color:red">Out of Stock</div>
+
+            <div class="productInfo"> Rating :{{item.ratingstar}}</div>
+            <div class="productInfo" style="color: brown;">Sold Qty :{{item.numberofdelivariesdone}}</div>
+            <div class="productInfo">
+                
+
+            </div>
+
+        </div>

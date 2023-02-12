@@ -1,0 +1,31 @@
+.buyContainer
+{
+    display: flex;
+    width: 100%;
+    overflow-y: auto;
+    height: 900px;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+.containerItem
+{
+    display: flex;
+    width: 1450px;
+    height: 300px;
+    border: 2px solid gray;
+    overflow-x: auto;
+    border-radius: 10px;
+
+min-width: 900px;
+    box-shadow: 3px 3px greenyellow;
+}
+.item
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color:rgb(223, 165, 165) ;
+    box-shadow: 3px 3px rgb(76, 50, 50);
+    border: 2px solid gray;
+}

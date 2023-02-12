@@ -1,0 +1,54 @@
+.exploreItem
+{
+    display: flex;
+    width: 1515px;
+    overflow-y: auto;
+    flex-flow: row wrap;
+    height: 700px;
+    border: 2px solid green;
+    border-radius: 10px;
+
+}
+.exploreItem>*
+{
+    margin: 5px;
+}
+.exploreItem>h3
+{
+    background-color: rgb(85, 225, 225);
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+}
+.itemImages
+{
+    width: 450px;
+    height: 600px;
+    border: 2px solid brown;
+}
+.itemDiscription
+{
+    flex: 3;
+    width: 600px;
+    height: 600px;
+    border: 2px solid brown;
+}
+.deliveryInfo
+{
+    width: 340px;
+    height: 600px;
+    border: 2px solid brown;
+}
+.FAQ
+{
+    width: 770px;
+    height: 600px;
+    border: 2px solid brown;
+}
+.reviews
+{
+    overflow-y: auto;
+    width: 700px;
+    height: 600px;
+    border: 2px solid brown;
+}

@@ -1,0 +1,147 @@
+<div class="exploreItem">
+    <div class="itemImages itemdata">
+        <h3>itemImages</h3>
+    </div>
+    <div class="itemDiscription itemdata">
+        <h3>About item</h3>
+        <div>
+            {{this.serve.itemToExplore.itemname}}
+        </div>
+        <div>
+            {{this.serve.itemToExplore.brand}}
+        </div>
+        <div>
+            {{this.serve.itemToExplore.price}}
+        </div>
+        <div>
+            {{this.serve.itemToExplore.regulardisc}}
+        </div>
+        <div>
+            {{this.serve.itemToExplore.primedisc}}
+        </div>
+      
+
+    </div>
+    <div class="deliveryInfo itemdata">
+        <h3>deliveryInfo</h3>
+
+        <h3>Item will be delivered to below Address</h3>
+        <div class="delAddress">{{this.serve.deliveryAddress}}</div>
+        <div class="delAddress">{{this.serve.pincode}}</div>
+        
+        <button *ngIf="presentInCart(this.serve.itemToExplore)" (click)="addToCart(this.serve.itemToExplore.id)">Add to Cart</button>
+        <button *ngIf="!presentInCart(this.serve.itemToExplore)" (click)="goToCart()">Go to cart</button>
+
+    </div>
+    <div class="FAQ itemdata">
+        <h3>FAQ</h3>
+    </div>
+    <div class="reviews itemdata">
+        <h3>reviews</h3>
+        <ul>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+            <li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="recentlyViewedItems itemdata">
+        <h3>recentlyViewedItems</h3>
+    </div>
+
+</div>

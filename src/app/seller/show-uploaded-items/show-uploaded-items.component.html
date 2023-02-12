@@ -1,0 +1,77 @@
+<div class="main">
+    <div class="container1">
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a >
+                        <span class="icon"></span>
+                        <span class="title">Brand Name</span>
+                    </a>
+                </li>
+                <li>
+                    <a >
+                        <span class="icon"></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a >
+                        <span class="icon"></span>
+                        <span class="title">Customer</span>
+                    </a>
+                </li>
+                <li>
+                    <a >
+                        <span class="icon"></span>
+                        <span class="title">Messages</span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="icon"></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a >
+                        <span class="icon"></span>
+                        <span class="title">Setting</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="maincontainer">
+        <div class="container" *ngFor="let item of this.serve.uploadedItems">
+    
+            <div class="productImg productInfo">
+                <ng-template [ngIf]="item.file!=null">
+                    {{item.file}}
+                </ng-template>
+               
+            </div>
+            <div class="productInfo productDetails">
+                <div class="productInfo1">{{item.id}}</div>
+                <div class="productInfo1">{{item.itemname}}</div>
+                <div class="productInfo1">{{item.price}}</div>
+                <div class="productInfo1">{{item.qty}}</div>
+                <div class="productInfo1">{{item.brand}}</div>
+                <div class="productInfo1">{{item.category}}</div>
+            </div>
+           
+            <div class="productInfo uploadImg">
+                <fieldset>
+                    <label for="">image upload</label>
+                    <div class="img">
+                        <input type="file" (change)="onFileChanged($event)">
+                    </div>
+                    <div class="btn">
+                       <input type="button" (click)="onUpload(item.id)" value="upload">
+                    </div>
+                </fieldset>
+            </div>
+        
+        </div>
+    </div>
+</div>
+

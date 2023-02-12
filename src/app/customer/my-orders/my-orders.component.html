@@ -1,0 +1,21 @@
+<div class="balance">
+    Your wallet balance is : {{this.serve.mywallet}}.00 INR.
+</div>
+<div class="maincontainer">
+    <div class="container" *ngFor="let order of this.serve.myorders">
+
+        <div class="productImg productInfo">{{order.itemname}}</div>
+        
+        <div class="productInfo">{{order.brand}}</div>
+        <div class="productInfo">{{order.qty}}</div>
+        
+        <div class="productInfo">{{order.category}}</div>
+        <div class="productInfo">Order Details......</div>
+        <div class="productInfo">
+            <form #numberofItem="ngForm">
+                <button class="productInfo" (click)="cancelOrder(order)" >Cancel Order</button>
+            </form>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,14 @@
+.footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: rgb(48, 46, 46);
+    height: 70px;
+}
+.footer>*
+{
+    margin: 5px 10px;
+    color: antiquewhite;
+}

@@ -1,0 +1,47 @@
+.header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+   border-bottom: 1px solid white;
+    width: 100%;
+background-image: linear-gradient(to right,blue,rgb(37, 37, 251),rgb(67, 94, 251),rgb(37, 37, 251),blue);
+    background-size: cover;
+    height: 70px;
+    border-radius: 5px;
+}
+.header>*
+{
+    margin: 5px 10px;
+   
+}
+.navbar>a
+{
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+.navbar>a:hover
+{
+background-color: rgb(11, 21, 42);
+}
+
+
+.logoutBtn
+{
+    float: right;
+}
+.carticon
+{
+    color: rgb(233, 144, 56);
+}
+.carticon:hover
+{
+    color: brown;
+    transform: scale(1.2);
+}
+/* ========================================================================== */
+
+  

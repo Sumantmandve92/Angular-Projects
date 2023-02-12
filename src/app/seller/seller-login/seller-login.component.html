@@ -1,0 +1,29 @@
+<div class="sellerLogin" *ngIf=true>
+    <fieldset class="sellerloginForm">
+        <form #logForm="ngForm">
+
+            <div class="formInput">
+                <input type="text" ngModel name="username" [(ngModel)]="username" placeholder="Username">
+            </div>
+            <div class="formInput">
+                <input type="text" ngModel name="password" placeholder="Password">
+            </div>
+            <div class="formInput" *ngIf="newAccount==1">
+                <input type="email" ngModel name="email" placeholder="Email">
+            </div>
+            <div class="formInput" *ngIf="newAccount==0">
+                <button (click)="login(logForm.value)">Login</button>
+            </div>
+            <div class="formInput" *ngIf="newAccount==1">
+                <button (click)="registerNewSeller(logForm.value)">register</button>
+            </div>
+            <div class="formInput" *ngIf="newAccount==1">
+                <button (click)="showNewAccountForm(0)">Already registered</button>
+            </div>
+            <div class="formInput" *ngIf="newAccount==0">
+                <button (click)="showNewAccountForm(1)">new Account</button>
+            </div>
+        </form>
+
+    </fieldset>
+</div>

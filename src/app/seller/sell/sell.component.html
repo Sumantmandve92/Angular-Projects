@@ -1,0 +1,213 @@
+<div class="uploadItem">
+
+  <fieldset class="productFields">
+    <legend>Product Profile</legend>
+    <form class="product" #groceryForm="ngForm" (ngSubmit)="addItemsDataBase(groceryForm.value)">
+      <div class="productInfo">
+        <label for="">Item name</label><br>
+        <input type="text" ngModel name="itemname" required>
+      </div>
+      <div class="productInfo">
+        <label for="">Brand</label><br>
+        <input type="text" ngModel name="brand">
+      </div>
+      <div class="productInfo">
+        <label for="">Category</label><br>
+        <select ngModel name="category" id="category" [(ngModel)]="category">
+          <option value="sports">Sports</option>
+          <option value="dryFruits">Dry Fruits</option>
+          <option value="cloths">Cloths</option>
+          <option value="footware">Footware</option>
+          <option value="homeandKitchen">Home and Kitchen</option>
+          <option value="cosmetics">Cosmetics</option>
+          <option value="books">Books</option>
+          <option value="vegetables">Vegetables</option>
+          <option value="electronics">Electronics</option>
+          <option value="hardware">Hardware</option>
+          <option value="spectacles">Spectacles</option>
+          <option value="pharmaceutical">Pharmaceutical</option>
+          <option value="flowers">Flowers</option>
+          <option value="jwellery">Jwellery</option>
+          
+        </select>
+
+      </div>
+      <div class="productInfo">
+        <label for="">Sub-Category</label><br>
+        <select ngModel name="subcategory" id="subcategory" *ngIf="category=='none'">
+          <option value="">first select Category</option>
+        </select>
+
+        <select ngModel name="subcategory" id="subcategory" *ngIf="category=='vegetables'">
+ vegetables         <option value="vegetables">vegetables</option>
+        </select>
+        <select ngModel name="subcategory" id="subcategory" *ngIf="category=='hardware'">
+<option value="hardware">Hardware</option>
+        </select>
+        <select ngModel name="subcategory" id="subcategory" *ngIf="category=='spectacles'">
+          <option value="spectacles">Spectacles</option>
+        </select>
+        <select ngModel name="subcategory" id="subcategory" *ngIf="category=='pharmaceutical'">
+          <option value="pharmaceutical">Pharmaceutical</option>
+        </select>
+        <select ngModel name="subcategory" id="subcategory" *ngIf="category=='flowers'">
+          <option value="flowers">Flowers</option>
+        </select>
+        <select ngModel name="subcategory" id="subcategory" *ngIf="category=='jwellery'">
+          <option value="jwellery">Jwellery</option>
+        </select>
+        <select ngModel name="subcategory" id="subcategory" *ngIf="category=='electronics'">
+          <option value="electronics">Electronics</option>
+        </select>
+        <select ngModel name="subcategory" id="subcategory" *ngIf="category=='books'">
+          <option value="">Historical</option>
+          <option value="">Technical</option>
+          <option value="">Spiritual</option>
+          <option value="">Medical</option>
+          
+
+        </select>
+
+        <select ngModel name="subcategory" id="subcategory" *ngIf="category=='sports'">
+
+          <option value="bat">Bat</option>
+          <option value="cricket ball">Cricket Ball</option>
+          <option value="tennis ball">Tennis Ball</option>
+          <option value="badminton">Badminton</option>
+          <option value="badminton Racket">Badminton Racket</option>
+          <option value="tennis Racket">Tennis Racket</option>
+          <option value="shuttlecock">Shuttlecock</option>
+          <option value="hand Gloves">Hand gloves</option>
+          <option value="helmet">Helmet</option>
+          <option value="stump">Stump</option>
+          <option value="hockey Stick">Hockey Stick</option>
+          <option value="skis">Skis</option>
+          <option value="skates">Skates</option>
+          <option value="knee pads">Knee Pads</option>
+
+
+        </select>
+        <select ngModel name="subcategory" id="subcategory" *ngIf="category=='dryFruits'">
+
+          <option value="almond">Almond</option>
+          <option value="Cashew Nuts">Cashew Nuts</option>
+          <option value="ChestNut">ChestNut</option>
+          <option value="Raisins">Raisins</option>
+          <option value="Figs">Figs</option>
+          <option value="Flax">Flax</option>
+          <option value="Dates">Dates</option>
+          <option value="GroundNuts">GroundNuts</option>
+          <option value="Pine Nut">Pine Nut</option>
+          <option value="Poppy Seeds">Poppy Seeds</option>
+          <option value="Saffron">Saffron</option>
+          <option value="dryFruits11">Walnut</option>
+          <option value="Charoli">Charoli</option>
+          <option value="Pumkin Seeds">Pumkin Seeds</option>
+
+        </select>
+        <select ngModel name="subcategory" id="subcategory" *ngIf="category=='cloths'">
+
+          <option value="Sweater">Sweater</option>
+          <option value="Shirt">Shirt</option>
+          <option value="Jeans">Jeans</option>
+          <option value="Gloves">Gloves</option>
+          <option value="Cap">Cap</option>
+          <option value="Suit">Suit</option>
+          <option value="Hawaiian Shirts">Hawaiian Shirts</option>
+          <option value="Singlet">Singlet</option>
+          <option value="Shorts">Shorts</option>
+          <option value="Cardigan">Cardigan</option>
+          <option value="Jacket">Jacket</option>
+          <option value="Bow tie">Bow tie</option>
+          <option value="Sleevless Shit">Sleevless Shit</option>
+          <option value="Vest">Vest</option>
+          <option value="Polo Shirt">Polo Shirt</option>
+          <option value="Jumper">Jumper</option>
+          <option value="Trench Coat">Trench Coat</option>
+          <option value="Swim Suit">Swim Suit</option>
+          <option value="Blazer">Blazer</option>
+          <option value="Skirt">Skirt</option>
+          <option value="Scarf">Scarf</option>
+          <option value="Tie">Tie</option>
+          <option value="Dress">Dress</option>
+
+
+        </select>
+        <select ngModel name="subcategory" id="subcategory" *ngIf="category=='footware'">
+          <option value="Knee High Boots">Knee High Boots</option>
+          <option value="Boots">Boots</option>
+          <option value="Cowboy boots">Cowboy boots</option>
+          <option value="Wellington Boots">Wellington Boots</option>
+          <option value="Uggs">Uggs</option>
+          <option value="Work Boots">Work Boots</option>
+          <option value="Leced Booties">Leced Booties</option>
+          <option value="Scarpin Heels">Scarpin Heels</option>
+          <option value="Court Heels">Court Heels</option>
+          <option value="Stilettos">Stilettos</option>
+          <option value="Wedges">Wedges</option>
+          <option value="High Heels">High Heels</option>
+          <option value="Running Shoes">Running Shoes</option>
+          <option value="Hiking Shoes">Hiking Shoes</option>
+          <option value="Flip Flops">Flip Flops</option>
+          <option value="Climbing Shoes">Climbing Shoes</option>
+          <option value="Old Skools">Old Skools</option>
+          <option value="Sneakers">Sneakers</option>
+          <option value="Kitten Heels">Kitten Heels</option>
+        </select>
+
+        <select ngModel name="subcategory" id="subcategory" *ngIf="category=='cosmetics'">
+          <option value="">Primer</option>
+          <option value="">Toner</option>
+          <option value="">Foundation</option>
+          <option value="">Eyeliner</option>
+          <option value="">Lipsticks</option>
+          <option value="">Brushes</option>
+          <option value="">Mirror</option>
+          <option value="">Cleanser</option>
+          <option value="">Bronzer</option>
+          <option value="">Eye Shadow</option>
+          <option value="">Mascara</option>
+          <option value="">Concealer</option>
+          <option value="">Nail Polish</option>
+          <option value="">Cream</option>
+          <option value="">Lip Gloss</option>
+          <option value="">Lotion</option>
+          <option value="">Lip liner</option>
+          <option value="">Sponge</option>
+          <option value="">Makeup kit</option>
+          <option value="">Brightner</option>
+          <option value="">Tanning Lotion</option>
+          <option value="">Lip pencil</option>
+          <option value="">Facial Spray</option>
+          <option value="">Hand Cream</option>
+          <option value="">Face Powder</option>
+
+        </select>
+      </div>
+      <div class="productInfo">
+        <label for="">Price per item</label><br>
+        <input type="number" ngModel name="price" placeholder="Selling price">
+      </div>
+      <div class="productInfo">
+        <label for="">Quantity</label><br>
+        <input type="number" ngModel name="qty" placeholder="add your stock of this products">
+      </div>
+      <div class="productInfo">
+        <label for="">You purchased at in(INR)</label><br>
+        <input type="number" ngModel name="purchasePrice">
+      </div>
+      <div class="productInfo">
+        <label for="">Discount1</label><br>
+        <input type="number" ngModel name="regulardisc" placeholder="Discount for regular category in (%)">
+      </div>
+      <div class="productInfo">
+        <label for="">Discount2</label><br>
+        <input type="number" ngModel name="primedisc" placeholder="Discount for prime category in (%)"><br>
+      </div><br>
+      <div>
+        <button>add</button>
+      </div>
+     
+    </form>
+  </fieldset>
+</div>

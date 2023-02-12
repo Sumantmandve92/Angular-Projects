@@ -1,0 +1,26 @@
+<div class="balance">
+    Your wallet balance is : {{this.serve.mywallet}}.00 INR.
+</div>
+<div class="maincontainer">
+    <div class="container" *ngFor="let item of this.serve.myCart">
+
+        <div class="productImg productInfo">{{item.file.filebyte}}</div>
+        
+        <div class="productInfo">{{item.itemname}}</div>
+        <div class="productInfo">{{item.price}}</div>
+        <div class="productInfo" *ngIf="item.qty!=0">{{item.qty}}</div>
+        <div class="productInfo" *ngIf="item.qty==0" style="color:red">Out of Stock</div>
+        <div class="productInfo">{{item.brand}}</div>
+        <div class="productInfo">{{item.category}}</div>
+        <div class="productInfo">see more......</div>
+        <div class="productInfo">
+            <form #numberofItem="ngForm">
+
+                Quantity:<button (click)="counter(1)">+</button>{{count}} <button (click)="counter(-1)">-</button>
+                <button class="productInfo" (click)="buy(item)">buy now</button>
+            </form>
+        </div>
+        <div class="productInfo"><button (click)="this.serve.removeFromBothCart(item)">Remove</button></div>
+
+    </div>
+</div>

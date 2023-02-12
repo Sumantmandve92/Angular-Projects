@@ -1,0 +1,18 @@
+<button>Back</button>
+
+<div class="containerItem">
+    <div *ngFor="let item of this.itemFindByName ">
+
+        <div class="item">
+            <img style="background-size: cover ; width: 200px; height: 200px;"
+                src="../../../assets/Images/istockphoto-1136317339-1024x1024.jpg" alt="bat">
+            <h3 style="color: brown;text-align:center;" (click)="exploreItem(item)">{{item.itemname}}</h3>
+            <h3 style="color: green; text-align:center;" (click)="exploreItem(item)"><del>₹{{item.price}}</del>
+                <sup>00</sup></h3>
+            <h3 style="color: rgb(174, 205, 127);text-align:center;" (click)="exploreItem(item)">see more...</h3>
+
+        </div>
+
+
+    </div>
+</div>
